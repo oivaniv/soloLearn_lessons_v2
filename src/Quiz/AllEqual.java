@@ -36,4 +36,21 @@ public class AllEqual {
             System.out.println("Not equal");
         }
     }
+
+    public static void EqualЕTwo(){
+        Scanner scanner = new Scanner(System.in);
+
+        String value = scanner.nextLine();
+
+        char[] valueArr = value.toCharArray();
+
+        int x =0;
+        if (valueArr[x]==valueArr[x+1]&&valueArr[x]==valueArr[x+2]){
+
+            System.out.println("Equal");
+
+        }else {
+            System.out.println("Not equal");
+        }
+    }
 }
