@@ -4,7 +4,7 @@ public class Vehicle {
 
     //Class attributes
     private int maxSpeed;
-    int wheels;
+    public int wheels;
     String colour;
     double fuelCapacity;
 
@@ -29,7 +29,7 @@ public class Vehicle {
 //    }
 
     //How to initialize the constructor with few parameters
-    Vehicle(int mSpeed, int newWheels, String newColor){
+    public Vehicle(int mSpeed, int newWheels, String newColor){
         maxSpeed = mSpeed;
         wheels = newWheels;
         colour = newColor;
@@ -48,5 +48,9 @@ public class Vehicle {
     //Setter for Vehicle constructor
     public void setColour(String setColorValue){
         this.colour = setColorValue;
+    }
+
+    public String getColour(){
+        return colour;
     }
 }
