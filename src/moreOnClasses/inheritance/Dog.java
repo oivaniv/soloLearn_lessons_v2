@@ -12,7 +12,12 @@ public class Dog extends Animal {
     }
 
     //Here we create constructor Dog of class Dog and set value for variable legs
+
     Dog(){
-        legs=4;
+        legs=5;
+
+        //Access to the super class from the subclass
+        super.legs =1;
     }
+
 }
